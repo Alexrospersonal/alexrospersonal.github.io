@@ -22,13 +22,15 @@ body {
 
 .main_container {
     width: 920px;
-    height: 420px;
+
     background-color: var(--main-resume-container-color);
     border-radius: 5px;
 
     margin-top: 50px;
     padding: 60px;
     box-sizing: border-box;
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .resume_container {
@@ -51,7 +53,7 @@ body {
     font-size: 27px;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .resume_skils {
@@ -61,10 +63,10 @@ body {
 }
 
 .resume_line {
-    width: 220px;
-    height: 4px;
+    width: 120px;
+    height: 2px;
     background-color: var(--elements-color);
-    border-radius: 2px;
+    border-radius: 1px;
     margin-bottom: 7px;
 }
 
@@ -72,8 +74,10 @@ body {
     font-size: 17px;
     color: var(--information-font-color);
     line-height: 1.4;
+
     display: inline-block;
     width: 95%;
+    margin-bottom: 15px;
 }
 
 .resume_photo {
@@ -86,6 +90,7 @@ body {
     height: 216px;
     border-radius: 50%;
     background-color: var(--main-bg-color);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,5 +101,28 @@ body {
     height: 210px;
     border-radius: 50%;
     background-image: url("images/photo.jpg");
+    background-size: 100% 100%;
+}
+
+.contact_information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact_mail {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.contact_mail a {
+    color: var(--information-font-color);
+    text-decoration: none;
+}
+
+.linkedin_icon {
+    width: 23px;
+    height: 20px;
+    background-image: url("images/linkedin.png");
     background-size: 100% 100%;
 }
